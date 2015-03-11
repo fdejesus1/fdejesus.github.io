@@ -13,6 +13,8 @@ $(document).ready(function(){
     else{
       
     }
+    $(".card")function clearThis(#card_holder){
+        $(target).val = "";}
 
 });
 });
