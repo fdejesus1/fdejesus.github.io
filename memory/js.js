@@ -12,17 +12,14 @@ $(document).ready(function(){
       thecard = $(this).find("p");
     	thecard.css("opacity", "1"); 
     	var first_click = $(this).find("p").html();
-      
     }
     else{
       var second_click = $(this).find("p").html();
-      
-    }
+      }
     $(".card").click(function(){
       if(first_click==second_click){
       thecard .css("opacity", "0")
-    
-}
+        }
 });
 });
 }
