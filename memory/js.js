@@ -14,7 +14,7 @@ $(document).ready(function(){
       
     }
     $(".card")function clearThis(#card_holder){
-        $(target).val = "";}
+        $(target).val = ""};
 
 });
 });
