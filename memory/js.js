@@ -18,7 +18,7 @@ $(document).ready(function(){
       
     }
     $(".card").click(function(){
-      if(.varfirst_click==.varsecond_click).css("opacity", "0")
+      if(first_click==second_click).css("opacity", "0")
     
 });
 });
