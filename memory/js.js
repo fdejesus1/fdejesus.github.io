@@ -19,6 +19,6 @@ $(document).ready(function(){
     }
     $(".card").click(function(){
       if(.var1==.var2).css("opacity", "0")
-    });
+    
 });
 });
