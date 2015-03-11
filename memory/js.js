@@ -8,7 +8,7 @@ $(document).ready(function(){
   var click_counter=0;
     $(".card").click(function(){
     if(click_counter==0){
-      click_counter = 1;
+      click_counter == 1;
       thecard = $(this).find("p");
     	thecard.css("opacity", "1"); 
     	var first_click = $(this).find("p").html();
