@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   var card_array = ["fish", "fish", "turtle", "turtle", "pig", "pig", "dog", "dog", "cat", "cat", "snake", "snake", "bird", "bird", "goat", "goat", "hamster", "hamster", "dragon", "dragon"]
   var thecard;
@@ -16,9 +15,11 @@ $(document).ready(function(){
     }
     else{
       var second_click = $(this).find("p").html();
+      console.log("here")
       if(
-      first_click==second_click){
-      thecard.css("opacity", "0")}
+      first_click===second_click){
+        console.log("hey"+card);
+     		$(".card").css("background-color", "blue")}
     }
   });
 });
