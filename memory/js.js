@@ -7,19 +7,20 @@ $(document).ready(function(){
   var first_click="none"
   var click_counter=0;
   $(".card").click(function(){
+    thecard = $(this).find("p");
+    thecard.css("opacity", "1"); 
     if(click_counter==0){
-      click_counter == 1;
-      thecard = $(this).find("p");
-    	thecard.css("opacity", "1"); 
-    	var first_click = $(this).find("p").html();
+      click_counter = 1;
+    	first_click = $(this).find("p").html();
     }
     else{
       var second_click = $(this).find("p").html();
-      console.log("here")
-      if(
-      first_click===second_click){
-        console.log("hey"+card);
-     		$(".card").css("background-color", "blue")}
+      console.log("second_click " + second_click + " first_click " + first_click)
+      if(first_click===second_click){
+        console.log("hey");
+     		thecard.css("background-color", "blue")}
+    click_counter=0;
+
     }
   });
 });
