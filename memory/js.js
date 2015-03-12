@@ -5,7 +5,7 @@ $(document).ready(function(){
   for(i in card_array){
     $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>');
   }
-  var first_click=none
+  var first_click="none"
   var click_counter=0;
   $(".card").click(function(){
     if(click_counter==0){
