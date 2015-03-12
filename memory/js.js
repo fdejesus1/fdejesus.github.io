@@ -5,6 +5,7 @@ $(document).ready(function(){
   for(i in card_array){
     $('#card_holder').append('<div class="card"><p>'+card_array[i]+'</p></div>');
   }
+  var first_click=none
   var click_counter=0;
     $(".card").click(function(){
     if(click_counter==0){
@@ -15,10 +16,12 @@ $(document).ready(function(){
     }
     else{
       var second_click = $(this).find("p").html();
-      }
+      if(
+      first_click==second_click){
+      thecard.css("opacity", "0")}
+    }
     $(".card").click(function(){
-      if(first_click==second_click){
-      thecard.css("opacity", "0")
+      
         }
 });
 });
