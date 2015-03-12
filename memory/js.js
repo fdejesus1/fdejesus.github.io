@@ -7,7 +7,7 @@ $(document).ready(function(){
   }
   var first_click=none
   var click_counter=0;
-    $(".card").click(function(){
+  $(".card").click(function(){
     if(click_counter==0){
       click_counter == 1;
       thecard = $(this).find("p");
@@ -20,9 +20,5 @@ $(document).ready(function(){
       first_click==second_click){
       thecard.css("opacity", "0")}
     }
-    $(".card").click(function(){
-      
-        }
-});
-});
+  });
 });
