@@ -20,7 +20,7 @@ $(document).ready(function(){
         console.log("hey");// i was just trying to test something to make sure it knows when the second click happens
      		thecard.css("background-color", "blue")}
     click_counter=0;// sets the clicks back to zero 
-
+// i would like to randomize the cards so they are not next to each other 
     }
   });
 });
