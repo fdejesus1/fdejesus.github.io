@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('#mydiv').append("<p>"+val1+"</p>");//adding html to the the end of the string and makes a list 
     console.log(val1);//checks if the code is working 
   $('#clear-button').on('click',function(){
-  $('#mydiv').empty();
+  $('#mydiv').empty();//clears everything and reset the entire list 
   });
   });
 })
