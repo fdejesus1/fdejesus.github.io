@@ -4,28 +4,28 @@ $(document).ready(function(){
   
   //when the player clicks on the 'guess' button
   $('button').on('click', function(){
-   var userGuess =   //save their guess as a variable
-    
+   var userGuess =  $('input').val() //save their guess as a variable
+    console.log(userGuess)
     
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
     
       //what happens if the guess is correct?
       
-    if ( randomNumber > userGuess){
-      console.log("Too Low. Guess Higher")
-    }//if the user guessed too high...
-    else if  {
-      console.log("Too High. Guess Lower")
-    }
-    else(randomNumber = userGuess) {
-      console.log("You Guessed It Right")
-    }
-      //update the 'feedback' paragraph to tell them to guess lower
+    // if ( randomNumber > userGuess){
+    //   console.log("Too Low. Guess Higher")
+    // }//if the user guessed too high...
+    // else if  {
+    //   console.log("Too High. Guess Lower")
+    // }
+    // else(randomNumber = userGuess) {
+    //   console.log("You Guessed It Right")
+    // }
+    //   //update the 'feedback' paragraph to tell them to guess lower
       
-    //otherwise, the user guessed too low...
+    // //otherwise, the user guessed too low...
     
-      //update the 'feedback' paragraph to tell them to guess higher
+    //   //update the 'feedback' paragraph to tell them to guess higher
     
   });
 });
