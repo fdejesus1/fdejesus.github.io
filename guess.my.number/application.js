@@ -8,7 +8,7 @@ $(document).ready(function(){
     console.log(userGuess)
     
     if (userGuess==randomNumber){
-      alert.("You Guess Right")
+      alert("You Guess Right")
     }
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
