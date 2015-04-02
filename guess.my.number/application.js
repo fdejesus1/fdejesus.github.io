@@ -6,9 +6,10 @@ $(document).ready(function(){
   $('button').on('click', function(){
    var userGuess =  parseInt ($('input').val()); //save their guess as a variable
     console.log(userGuess);
-    $("#guess_counter").val = guess_counter + 1 
     guess_counter = guess_counter + 1 
-    
+    console.log(guess_counter)
+    $("#guess_counter").val(guess_counter) 
+
     if (userGuess==randomNumber){
       alert("You Guess Right")
     } else if (userGuess > randomNumber ){
