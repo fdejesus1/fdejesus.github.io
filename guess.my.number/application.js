@@ -6,15 +6,15 @@ $(document).ready(function(){
   $('button').on('click', function(){
    var userGuess =  parseInt ($('input').val()); //save their guess as a variable
     console.log(userGuess);
-    guess_counter = guess_counter + 1 
-    console.log(guess_counter)
-    $("#guess_counter").text(guess_counter + " guesses so far") 
+    guess_counter = guess_counter + 1 //changes the guess_counter by 1 every guess
+    console.log(guess_counter)// just checking if the guess_counter was working
+    $("#guess_counter").text(guess_counter + " guesses so far") //shows how many guesses the user has so far
 
     if (userGuess==randomNumber){
-      alert("You Guess Right")
-    } else if (userGuess > randomNumber ){
+      alert("You Guess Right")//alerts the user that he was correct in the guess
+    } else if (userGuess > randomNumber ){// checks if the guess is higher that the number selected and tells the user to guess lower
       alert("Guess Lower")
-    } else if(userGuess < randomNumber){
+    } else if(userGuess < randomNumber){// checks if the guess is lower that the number selected and tells the user to guess higher
       alert("Guess Higher")
     }
     //and compare this guess to the random number that the computer picked
