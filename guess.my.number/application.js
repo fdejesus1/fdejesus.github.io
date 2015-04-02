@@ -10,9 +10,9 @@ $(document).ready(function(){
     if (userGuess==randomNumber){
       alert("You Guess Right")
     } else if (userGuess > randomNumber ){
-      alert("too high")
+      alert("Guess Lower")
     } else if(userGuess < randomNumber){
-      alert("too low")
+      alert("Guess Higher")
     }
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
