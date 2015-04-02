@@ -8,7 +8,7 @@ $(document).ready(function(){
     console.log(userGuess);
     guess_counter = guess_counter + 1 
     console.log(guess_counter)
-    $("#guess_counter").val(guess_counter) 
+    $("p#guess_counter").val(guess_counter) 
 
     if (userGuess==randomNumber){
       alert("You Guess Right")
