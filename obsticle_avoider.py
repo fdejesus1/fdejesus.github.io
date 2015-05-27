@@ -21,11 +21,9 @@ def turn_left()
     time.sleep(.1)
     left()
     time.sleep(2)
-while True 
-while us_dist(15) > 15:
-  fwd()
-turn_right()
+while True:
+  while us_dist(15) > 15:
+    fwd()
+  turn_right()
 
-us_dist(15) < 15
-print us_dist(15)
-distance_to 
+
