@@ -24,6 +24,17 @@ def turn_left()
 while True:
   while us_dist(15) > 15:
     fwd()
-  turn_right()
+  stop()
+  servo(0)
+  distance_left= us_dist(15)
+  servo(180)
+  distance_right= us_dist(15)
+  if distance_right < 15:
+    turn_right()
+    fwd()
+  if distance_left < 15:
+    turn_left()
+    fwd()
+    
 
 
